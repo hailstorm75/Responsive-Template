@@ -2,11 +2,13 @@
 <html>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="codeTag.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="nav.js"></script>
 		<script type="text/javascript" src="back-top.js"></script>
+		<script type="text/javascript" src="lineNumber.js"></script>
 		<script>
 			document.getElementById('menu').onchange = function() {
 				window.location.href = this.children[this.selectedIndex].getAttribute('href');
@@ -52,6 +54,17 @@
 				<h2>Lorem</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				</p>
+				<p>
+					<pre><code>&lt;div class="example"&gt;
+    &lt;span&gt;Lorem ipsum dolor sit amet...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<pre><code>(function() {
+    var s = document.createElement('script');
+        s.id = "some-id";
+        s.type = "text/javascript";
+    document.body.appendChild(s);
+})();</code></pre>
 				</p>
 			</section>
 		</div>
